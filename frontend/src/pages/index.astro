@@ -1,16 +1,29 @@
 ---
-
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 ---
 
+<!doctype html>
 <html lang="en">
 	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
 	</head>
 	<body>
-		<h1>Astro...</h1>
+		<Header title={SITE_TITLE} />
+		<main>
+			<h1>🧑‍🚀 Hello, Astronaut!</h1>
+			<p>
+				Welcome to the official <a href="https://astro.build/">Astro</a> blog starter template. This
+				template serves as a lightweight, minimally-styled starting point for anyone looking to
+				build a personal website, blog, or portfolio with Astro.
+			</p>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam nemo voluptate culpa iusto! Totam numquam, expedita dicta voluptates fugit doloribus distinctio ipsam voluptatibus non incidunt tenetur natus odio. Cumque, dicta?</p>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure sed deserunt aliquid aliquam quis! Libero eaque recusandae ipsam ducimus nemo, culpa sapiente ullam alias est eum nihil nesciunt. Laudantium, optio.</p>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia esse nostrum est, odio enim magni aspernatur, possimus, ad accusantium a commodi maxime repellat neque id repellendus provident repudiandae cum nesciunt!</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A id tempora laudantium earum cupiditate temporibus aperiam eligendi error ab maiores, magnam laborum, molestias, amet voluptatum ducimus fugit doloremque vitae possimus.</p>
+		</main>
+		<Footer />
 	</body>
 </html>
