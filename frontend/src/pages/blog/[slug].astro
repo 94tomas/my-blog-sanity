@@ -69,7 +69,7 @@ import BlockContent from '../../components/BlockContent.vue';
 		<main>
 			<article>
 				<div class="hero-image">
-					<img width="100%" height={400} src={(post.mainImage) ? `https://cdn.sanity.io/images/${import.meta.env.PUBLIC_SANITY_PROJECT_ID}/production/${buildImage(post.mainImage?.asset?._ref)}` : '/blog-placeholder-1.jpg'} alt="" />
+					<img width="100%" height={400} src={(post.mainImage) ? `https://cdn.sanity.io/images/${import.meta.env.PUBLIC_SANITY_PROJECT_ID}/production/${buildImage(post.mainImage?.asset?._ref)}` : '/banner-default.jpg'} alt="" />
 					<!-- {heroImage && <img width={1020} height={510} src={heroImage} alt="" />} -->
 				</div>
 				<div class="prose">

@@ -99,7 +99,7 @@ import { buildImage } from '../../utils/buildImage';
 							return (
 								<li>
 									<a href={`/blog/${post.slug?.current}`}>
-										<img width={720} height={300} src={(post.mainImage) ? `https://cdn.sanity.io/images/${import.meta.env.PUBLIC_SANITY_PROJECT_ID}/production/${buildImage(post.mainImage?.asset?._ref)}` : '/blog-placeholder-1.jpg'} alt="" />
+										<img width={720} height={300} src={(post.mainImage) ? `https://cdn.sanity.io/images/${import.meta.env.PUBLIC_SANITY_PROJECT_ID}/production/${buildImage(post.mainImage?.asset?._ref)}` : '/banner-default.jpg'} alt="" />
 										<h4 class="title">{post.title}</h4>
 										<p class="date">
 											<FormattedDate date={new Date(post.publishedAt)} />
