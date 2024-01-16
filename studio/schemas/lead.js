@@ -9,11 +9,20 @@ export default defineType({
       name: 'name',
       title: 'Nombre',
       type: 'string',
+      readOnly: true
+
     }),
     defineField({
       name: 'email',
       title: 'Email',
       type: 'string',
+      readOnly: true
+    }),
+    defineField({
+      name: 'message',
+      title: 'Mensaje',
+      type: 'text',
+      readOnly: true
     })
   ],
 })
